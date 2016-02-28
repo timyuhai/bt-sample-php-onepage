@@ -1,0 +1,11 @@
+{
+    "name": "timyuhai/bt-sample-php-onepage",
+    "authors": [
+        {
+            "name": "Tim Yu"
+        }
+    ],
+    "require": {
+        "braintree/braintree_php": "^3.9"
+    }
+}
