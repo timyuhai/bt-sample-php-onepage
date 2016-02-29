@@ -35,8 +35,7 @@
 	        <li class="dropdown <? isClassActive('advanced'); ?>">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advanced <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="/basic/dropin.php">Drop-in UI</a></li>
-	            <li><a href="/basic/hosted-fields">Hosted Fields</a></li>
+	            <li><a href="/advanced/transaction_search.php">Transaction Search</a></li>
 	          </ul>
 	        </li>
 	        <li class="dropdown">
