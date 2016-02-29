@@ -27,7 +27,7 @@ $page_title = 'Transaction Search';
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Transaction IDs</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="txnIds" name="txnIds" placeholder="Transaction IDs">
+				<input type="text" class="form-control" id="txnIds" name="txnIds" placeholder="Comma separated transaction ids">
 			</div>
 		</div>
 		<div class="form-group">
