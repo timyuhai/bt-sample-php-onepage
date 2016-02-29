@@ -23,6 +23,10 @@
 		<th scope="row">Amount</th>
 		<td><? print "{$result->transaction->currencyIsoCode} {$result->transaction->amount}" ?></td>
 	</tr>
+	<tr>
+		<th scope="row">Order ID</th>
+		<td><? echo $result->transaction->orderId ?></td>
+	</tr>
 </table>
 <? else: ?>
 <div class="alert alert-danger"><b>Transaction Failed:</b> <br> <? echo $result->message ?></div>

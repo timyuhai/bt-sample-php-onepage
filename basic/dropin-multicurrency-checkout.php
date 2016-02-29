@@ -14,6 +14,7 @@ $result = Braintree_Transaction::sale([
   'paymentMethodNonce' => $_POST['payment_method_nonce'],
   'deviceData' => $_POST['device_data'],
   'merchantAccountId' => "braintree{$_POST['currency']}",
+  'orderId' => uniqid('ORDER_'),
   'options' => [
     'submitForSettlement' => True
   ]

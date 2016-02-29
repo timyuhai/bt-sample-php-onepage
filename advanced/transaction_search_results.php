@@ -63,6 +63,7 @@ $collection = Braintree_Transaction::search($search_params);
 		<th>Amount</th>
 		<th>Status</th>
 		<th>Credit Card</th>
+		<th>Order ID</th>
 	</tr>
 	<? foreach ($collection as $txn): ?>
 	<tr>
@@ -78,6 +79,7 @@ $collection = Braintree_Transaction::search($search_params);
 		else
 			echo $txn->paymentInstrumentType;
 		?></td>
+		<td><? echo $txn->orderId ?></td>
 	</tr>
 	<? endforeach; ?>
 </table>
