@@ -30,6 +30,7 @@
 	            <li><a href="/basic/dropin.php">Drop-in UI</a></li>
 	            <li><a href="/basic/hosted-fields.php">Hosted Fields</a></li>
 	            <li><a href="/basic/dropin-multicurrency.php">Multi-currency</a></li>
+	            <li><a href="/basic/hosted-fields-address.php">Additional Info</a></li>
 	          </ul>
 	        </li>
 	        <li class="dropdown <? isClassActive('advanced'); ?>">
