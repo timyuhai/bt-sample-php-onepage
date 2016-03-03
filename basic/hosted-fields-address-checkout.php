@@ -30,7 +30,7 @@ $result = Braintree_Transaction::sale([
     'region' => $_POST['state'],
     'postalCode' => $_POST['postal'],
     'countryCodeAlpha2' => $_POST['country']
-  ],
+  ]
 ]);
 
 include('../result.php');
