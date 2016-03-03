@@ -2,4 +2,5 @@
 **/*.log
 vendor
 composer.lock
+db.sqlite3
 

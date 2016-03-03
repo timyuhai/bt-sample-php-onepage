@@ -1,4 +1,6 @@
 <?php
+	require_once 'common/util.php';
+
   function isClassActive($url_key) {
   	$path_only = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
   	// echo $path_only;
@@ -37,6 +39,7 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advanced <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="/advanced/transaction_search.php">Transaction Search</a></li>
+	            <li><a href="/advanced/vault-home.php">Vault</a></li>
 	          </ul>
 	        </li>
 	        <li class="dropdown">
@@ -73,3 +76,5 @@
 
 	<h1 class="text-primary"><? echo $page_title; ?></h1>
 	<hr>
+
+<? Util::error_message() ?>	
