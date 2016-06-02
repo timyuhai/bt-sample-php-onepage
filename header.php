@@ -31,6 +31,7 @@
 	          <ul class="dropdown-menu">
 	            <li><a href="/basic/dropin.php">Drop-in UI</a></li>
 	            <li><a href="/basic/hosted-fields.php">Hosted Fields</a></li>
+	            <li><a href="/basic/hosted-fields-dropdown.php">Hosted Fields with Dropdown</a></li>
 	            <li><a href="/basic/dropin-multicurrency.php">Multi-currency</a></li>
 	            <li><a href="/basic/hosted-fields-address.php">Additional Info</a></li>
 	          </ul>

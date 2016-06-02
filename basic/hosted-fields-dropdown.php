@@ -97,7 +97,7 @@ $clientToken = Braintree_ClientToken::generate();
 	  	</p>
 	  	<div class="alert alert-info">Testing Card Number: 4111111111111111</div>
 	  	<div>
-	  	<form id="checkout" method="post" action="hosted-fields-checkout.php">
+	  	<form id="checkout" method="post" action="hosted-fields-dropdown-checkout.php">
 	  		<div class="form-group">
 		  		<div id="paypal-button"></div>
 		  	</div>
@@ -106,10 +106,37 @@ $clientToken = Braintree_ClientToken::generate();
 			    <div id="card-number" class="form-control"></div>
 			    <span class="payment-method-icon"></span>
 			</div>
-			<div class="form-group">
-				<label>Expiration Date</label>
-			    <div id="expiration-date" class="bt-input form-control"></div>
+	  		<div class="form-group">
+				<label>Expiration</label>
+				<div class="row">
+					<div class="col-sm-6">
+						<select class="form-control" name="expirationMonth">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6" selected="selected">6</option>
+						  <option value="7">7</option>
+						  <option value="8">8</option>
+						  <option value="9">9</option>
+						  <option value="10">10</option>
+						  <option value="11">11</option>
+						  <option value="12">12</option>
+						</select>
+					</div>
+					<div class="col-sm-6">
+						<select class="form-control"  name="expirationYear">
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						  <option value="2018" selected="selected">2018</option>
+						  <option value="2019">2019</option>
+						  <option value="2020">2020</option>
+						</select>
+					</div>
+				</div>
 			</div>
+			
 			<div class="form-group">
 				<label>CVV</label>
 			    <div id="cvv" class="bt-input form-control"></div>
@@ -194,10 +221,6 @@ $(function(){
 			cvv: {
 		        selector: "#cvv",
 		        placeholder: "CVV"
-			},
-			expirationDate: {
-		        selector: "#expiration-date",
-		        placeholder: "MM/YYYY"
 			}
 		},
 		paypal: {
