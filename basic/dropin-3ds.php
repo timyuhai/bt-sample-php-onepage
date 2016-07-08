@@ -83,10 +83,8 @@ $(function(){
 			  creditCard: payload.nonce
 			}, function (error, response) {
 			  if (!error) {
-			  		console.log(payload.nonce);
-			  		console.log(response);
-			  		console.log(response.verificationDetails);
-					$('<input>', {
+			  		console.log(JSON.stringify(response));
+			  		$('<input>', {
 					    type: 'text',
 					    id: 'foo',
 					    name: 'payment_method_nonce',
