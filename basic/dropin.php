@@ -55,7 +55,10 @@ $(function(){
 	braintree.setup("<?php echo $clientToken ?>", "dropin", {
 	  container: "payment-form",
 	  dataCollector: {
-        kount: {environment: 'sandbox'}
+        kount: {
+        	environment: 'sandbox',
+        	merchantId: '699999'
+        }
       },
       onReady: function (braintreeInstance) {
         var form = document.getElementById('payment-form');
