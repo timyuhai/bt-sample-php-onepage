@@ -56,8 +56,7 @@ $(function(){
 	  container: "payment-form",
 	  dataCollector: {
         kount: {
-        	environment: 'sandbox',
-        	merchantId: '699999'
+        	environment: 'sandbox'
         }
       },
       onReady: function (braintreeInstance) {
