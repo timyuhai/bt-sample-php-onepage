@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$page_title = 'Vault'
+$page_title = 'Vault';
 ?>
 
 <!DOCTYPE html>
